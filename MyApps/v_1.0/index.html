@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            h1 {text-align: center;border-radius:5%;border-style: ridge;border-color:rgb(3, 5, 12) ;
+            padding-top:10px;
+            padding-bottom: 10px;}
+            body { background-color: rgb(234, 212, 240);
+            text-align: left;padding-bottom: 20px;padding-right: 20px;
+            padding-left:20px;border-style: dashed;
+            }
+            .create{background-color: rgb(31, 241, 122);}
+            #drop{
+                border-style:dotted;border-radius: 2%;
+            }
+            #all-task{
+                background-color:rgb(90, 115, 163);
+                text-align:center;
+            }
+            #com-task{
+                background-color:rgb(77, 146, 77);
+                text-align:center;
+            }
+            #incom-task{
+                background-color:rgb(163, 96, 96);
+                text-align:center;
+            }
+            #new-tasks{padding-top: 10px;[padding-bottom: 10px;]}
+            a:link{color:rgb(1, 8, 1)}
+            a:hover{color: rgb(235, 25, 25);}
+        </style>
+        <h1>My Personal Task Manager App v-1.0</h1>
+    </head>
+    <body> 
+        <form  id='create-task'>
+            <input type='text' placeholder="enter new task" name='newTask'>
+            <button class='create'>Create</button>
+        </form>
+        <div id='new-tasks'></div>
+        <p></p>
+        <select id='dropdown'>
+            <option value='alltask'>Show All Tasks</option>
+            <option value='comptask'>Show Completed Tasks</option>
+            <option value='incomptask'>Show Incomplete Tasks</option>
+            <option value='none'>None</option>
+        </select>
+        <div id='all-task'></div>
+        <div id='com-task'></div>
+        <div id='incom-task'></div>
+        <script src='uuid.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js'></script>
+        <script src='functions.js'></script>
+        <script src='mainscript.js'></script>
+    </body>
+</html>

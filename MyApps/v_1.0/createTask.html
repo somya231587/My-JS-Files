@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head> <h2>Define Your Task Here</h2>
+        <style>
+            h2  {text-align: center;border-style: solid;padding-top:10px;
+            padding-bottom: 10px;}
+            body { background-color: rgb(243, 234, 156);
+            text-align:start;
+            font-family:'Times New Roman', Times, serif;
+            border-style: dashed;
+            border-radius: 2%;padding-bottom: 20px;padding-right: 20px;
+            padding-left:20px;
+            }
+            #name{
+                font-size: small;
+            }
+            #body{
+                font-size: large;
+            }
+            a:link{color:rgb(1, 8, 1)}
+            a:hover{color: rgb(235, 25, 25);}
+        </style></head>
+    <body>
+    <a href="index.html">Home</a><p></p>
+    <input id='name' placeholder="enter task name ">
+    <span id='last-edited'></span><p></p>
+    <textarea id='body' placeholder="task description"></textarea>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js'></script>
+    <script src="functions.js"></script>
+    <script src="editTask.js"></script>
+</body>
+</html>

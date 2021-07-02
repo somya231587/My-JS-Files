@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head> <h1>My Personal Task Manager App v-0.0</h1></head>
+    <body>
+        <label>
+            <input type='checkbox' id='wake-up'> Get up at 7AM today
+        </label><p></p>
+        <label>
+            <input type='checkbox' id='water-plant'> Water the plants
+        </label><p></p>
+        <label>
+            <input type='checkbox' id='drink'> Drink pre-workout
+        </label><p></p>
+        <label>
+            <input type='checkbox' id='workout'> Workout Session
+        </label><p></p>
+        <label>
+            <input type='checkbox' id='javas'> Finish java-script course from Udemy
+        </label><p></p>
+        <label>
+            <input type='checkbox' id='discuss'> Discussion with Soumya
+        </label><p></p>
+        <label>
+            <input type='checkbox' id='rest'> Complete 6.5 hours of sleep
+        </label><p></p>
+        <form id='newTodoEntered'>
+            <input type='text' placeholder="Enter new tasks for the day" name='newtask'>
+            <button>Submit</button>
+        </form><p></p>
+        <label>
+            <input id='newadd' type='checkbox' > Click if new Tasks completed
+        </label><p></p>
+        <select id='dropdown'>
+            <option value='alltask'>Show All</option>
+            <option value='comptask'>Show Completed Tasks</option>
+            <option value='incomptask'>Show Incomplete Tasks</option>
+        </select><p></p>
+        <button id='clear'>Clear</button>
+        <div id='all-tasks'></div>
+        <div id='comp-tasks'></div>
+        <div id='incomp-tasks'></div>
+        <script src='myscript.js'></script>
+    </body>
+</html>
